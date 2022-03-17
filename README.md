@@ -1,2 +1,2 @@
 # CTFpage
-Page For solving CTFs
+Page For Hosting the CTF descriptions 
