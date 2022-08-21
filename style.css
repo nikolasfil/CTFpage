@@ -8,6 +8,22 @@ body {
   h3{
     text-align: center;
   }
+
+  a{
+    color: rgb(42, 139, 224);
+    /* text-align: center; */
+  }
+  
+  a:visited{
+    color: rgb(53, 113, 186);
+  }
+  
+  a:hover, a:active{
+    color: rgb(153, 46, 235);
+
+  }
+
+
 p {
 color: black;
 /* background-color: cornflowerblue; */
@@ -41,10 +57,7 @@ text-align: center;
   /* text-align: left; */
   text-align: center;
   } 
-   a{
-     color: blue;
-     text-align: center;
-   }
+   
    .Miscellaneous{
        padding:10px;
        align-items: center ;
