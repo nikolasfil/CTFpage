@@ -8,7 +8,7 @@ body {
   h3{
     text-align: center;
   }
-p {
+/* p {
 color: black;
 /* background-color: cornflowerblue; */
 /* text-align: left; */
@@ -33,5 +33,54 @@ text-align: center;
    align-items: center;
    background-color: rgb(141, 174, 236);
      /* text-shadow: 2px 2px 3px black; */
- }
+ } */
   
+ p {
+  color: black;
+  /* background-color: cornflowerblue; */
+  /* text-align: left; */
+  text-align: center;
+  } 
+   a{
+     color: blue;
+     text-align: center;
+   }
+   .Miscellaneous{
+       padding:10px;
+       align-items: center ;
+
+   }
+   
+   .challenge{
+     /* padding:5px; */
+     width: 600px;
+     margin: auto;
+     float : center ;
+     align-items: center;
+     background-color: rgb(141, 174, 236);
+       /* text-shadow: 2px 2px 3px black; */
+   }
+   
+   .Categories{
+    width: 600px;
+     margin: auto;
+     float : center ;
+     align-items: center;
+     background-color: rgb(141, 174, 236);
+   }
+
+   .whatarectf{
+    width: 600px;
+     margin: auto;
+     float : center ;
+     align-items: center;
+     background-color: rgb(140, 140, 236);  
+   }
+
+   .ctfcategories{
+    width: 600px;
+     margin: auto;
+     float : center ;
+     align-items: center;
+     background-color: rgb(140, 140, 236);
+   }
