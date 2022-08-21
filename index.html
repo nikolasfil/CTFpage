@@ -3,102 +3,131 @@
 <!-- /z/nikol/Github_Projects/NikolasProjects/CTFpage -->
 <!-- No there are no flags in here  -->
 <!-- https://validator.w3.org/nu/#file -->
+
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="author" content="Nikolasfil" />
-  <meta name="description"
-    content="This is a page dedicated to CTF, guides and challenges created and maintained by nikolasfil" />
-  <title>CTF Page</title>
-  <link rel="stylesheet" href="style.css" type="text/css" />
-  <!-- <link rel="icon" href="some image" type="image/x-icon"> -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Nikolasfil" />
+    <meta name="description"
+        content="This is a page dedicated to CTF, guides and challenges created and maintained by nikolasfil" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>CTF Page</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <!-- <link rel="icon" href="some image" type="image/x-icon"> -->
 </head>
 
 <body>
-  <div class="general">
-    <br />
 
-    <br />
-  </div>
+    <header>
+        <h2 style="text-align: left;">CTFpage</h2>
+        <nav>
+            
+            <a href="#whatarectf"><button id="navigationExplanation"> Explanation </button></a>
+            <a href="#ctfcategories"><button id="navigationCategories">Categories</button></a>
+            <a href="#resources"><button id="navigationResources">Resources</button></a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <!-- <section id="ChallengeCategories">
+            <h3 style="text-align: left;">Challenge Categories :</h3>
+            &nbsp;<a href="Miscellaneous.html"><button id="challenges">Miscellaneous</button></a>
 
-  <div class="Challenge Categories">
-    <!-- <h1>Categories :</h1> -->
-    <h4 id="cat">Categories :</h4>
-    <!-- <br><br> -->
-    <!-- absolute reference -->
-    <!-- <a href="https://nikolasfil.github.io/CTFpage/Miscellaneous.html">Miscellaneous</a>
-    <br /><br />
-    <a href="https://nikolasfil.github.io/CTFpage/Forensics.html">Forensics</a> -->
+            <a href="Forensics.html"><button id="challenges">Forensics</button></a>
 
-    <!-- relative reference -->
-    <a href="Miscellaneous.html">Miscellaneous</a>
-    <br /><br />
-    <a href="Forensics.html">Forensics</a>
-    <!-- <a href="https://nikolasfil.github.io/CTFpage/Forensic.html">Miscellaneous</a> -->
+            <br /><br />
 
-    <br /><br />
-  </div>
+        </section>
+        <hr> -->
 
-  <div class="whatarectf">
-    <h3>What Are CTF</h3>
-    <p>
-      CTF or Capture The Flag , are information security challenges . The main
-      goal of those challenges is to find the flag, which is a phrase that has a
-      standard format and is the proof you managed to solve the challenge (e.g.
-      flag{th1s_Is_an_3xampl3} ). The format of the flag is given most of the
-      time .
-    </p>
-  </div>
 
-  <div class="ctfcategories">
-    <!-- <h3>There are some categories for these challenges  that require a different way to find the flag :</h3> -->
-    <h3>CTF Categories</h3>
+        <section id="whatarectf">
+            <h3>What Are CTF</h3>
+            <p id="paragraphBorder">
+                <em> CTF</em> or <em> Capture The Flag </em>, are information security challenges . The main
+                goal of those challenges is to find the flag, which is a phrase that has a
+                standard format and is the proof you managed to solve the challenge (e.g.
+                flag{th1s_Is_an_3xampl3} ). The format of the flag is given most of the
+                time .
+            </p>
+        </section>
 
-    <dl>
-      <dt> &nbsp; Cryptography </dt>
-      <dd> Typically involves decrypting or encrypting a piece of data <br><br></dd>
+        <hr>
 
-      <dt> &nbsp; Miscellaneous </dt>
-      <dd> Random ,requiring simple logic, knowledge, and patience to be solved. <br><br></dd>
+        <section id="ctfcategories">
+            <h3><abbr title="Capture The Flag"> CTF</abbr> Categories</h3>
+            <section id="ctfcategoriesdl">
+                <dl id="ctfcategorieslist">
+                    <dt> &nbsp; <strong> Cryptography </strong>:</dt>
+                    <dd> Typically involves decrypting or encrypting a piece of data <br><br></dd>
 
-      <dt> &nbsp; Steganography/Forensics </dt>
-      <dd> Tasked with finding information hidden in files
-        or images<br><br></dd>
+                    
+                    <!-- <dt> &nbsp;<strong> Miscellaneous :</strong></dt> -->
+                    <dt> &nbsp;<a href="Miscellaneous.html"><button id="challenges"><strong> Miscellaneous</strong></button></a></dt>
+                    <dd> Random ,requiring simple logic, knowledge, and patience to be solved. <br><br></dd>
 
-      <dt> &nbsp; Binary /RE </dt>
-      <dd> Reverse engineering or exploiting a binary file<br><br></dd>
+                    <dt> &nbsp;<a href="Forensics.html"><button id="challenges"><strong> Steganography/Forensics</strong></button></a></dt>
+                    
+                    <dd> Tasked with finding information hidden in files
+                        or images<br><br></dd>
 
-      <dt> &nbsp; Web </dt>
-      <dd> Exploiting(finding a security flaw and using it to gain access to)
-        web pages to find the flag<br><br></dd>
+                    <dt> &nbsp;<strong> Binary /RE :</strong></dt>
+                    <dd> Reverse engineering or exploiting a binary file<br><br></dd>
 
-      <dt> &nbsp; Pwn </dt>
-      <dd> Exploiting(taking control of) a server to find the flag<br><br></dd>
+                    <dt> &nbsp;<strong> Web :</strong></dt>
+                    <dd> Exploiting(finding a security flaw and using it to gain access to)
+                        web pages to find the flag<br><br></dd>
 
-      <dt> &nbsp; Reverse Enginnering </dt>
-      <dd> Analyzing source coude , trying to figure out it’s
-        function and finding hidden messages (that’s the challenge)<br><br></dd>
-    </dl>
-    <br>
-  </div>
-  <div class="resources">
-    <h3>Resources</h3>
-    <h4>Practice</h4>
-    <p></p>
-    <a href="https://ctflearn.com/">ctflearn.com</a>
-    <a href="https://play.picoctf.org/">picoCTF.org</a>
-  </div>
+                    <dt> &nbsp;<strong> Pwn :</strong></dt>
+                    <dd> Exploiting(taking control of) a server to find the flag<br><br></dd>
 
-  <!-- <body id="Forensics">
-    
-    <h1 color=orange>Forensic Challenges</h1>
-  </body>  -->
-  <br><br>
-  <hr>
-  &lt;&lt;&lt; &copy; nikolasfil &gt;&gt;&gt;
-  <br>
-  
+                    <dt> &nbsp;<strong> Reverse Enginnering :</strong></dt>
+                    <dd> Analyzing source coude , trying to figure out it’s
+                        function and finding hidden messages (that’s the challenge)<br><br></dd>
+                </dl>
+            </section>
+            <br>
+        </section>
+        <hr>
+
+
+        <section id="resources">
+            <!-- <div class="resources"> -->
+            <h2 style="text-align: left;"><em> Resources </em></h2>
+
+            <aside>
+                <details>
+                    <summary>
+                        Resources
+                    </summary>
+                    <p id="paragraphSimple">On their way</p>
+                </details>
+            </aside>
+            <br>
+            <!-- <h4>Practice</h4> -->
+            <aside>
+                <details>
+                    <summary>
+                        Practice
+                    </summary>
+                    <p id="paragraphSimple"> <a href="https://ctflearn.com/">ctflearn.com</a><br>
+                        <a href="https://play.picoctf.org/">picoCTF.org</a>
+                    </p>
+                </details>
+            </aside>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <br>
+        <hr>
+        <p id="paragraphSimple"><a href="#" style="font-size: 13px;">Back to Top</a>&nbsp;&nbsp; &lt;&lt;&lt; &copy;
+            nikolasfil &gt;&gt;&gt; &nbsp;&nbsp;<a href="/" style="font-size: 13px;">Back to home</a></p>
+    </footer>
 </body>
 
 </html>
