@@ -1,99 +1,98 @@
+html{
+  background-color: powderblue;
+  background-position: center;
+  background-size: cover;
+}
+
+
 body {
-    background-color: powderblue;
-  }
-  h1 {
-    color: black;
-  }
-  
-  h3{
-    text-align: center;
-  }
+  background-color: powderblue;
+}
+h1 {
+  color: black;
+}
 
-  a{
-    color: rgb(42, 139, 224);
-    /* text-align: center; */
-  }
-  
-  a:visited{
-    color: rgb(53, 113, 186);
-  }
-  
-  a:hover, a:active{
-    color: rgb(153, 46, 235);
+h3 {
+  text-align: center;
+}
 
-  }
+a {
+  color: rgb(42, 139, 224);
+  /* text-align: center; */
+}
 
+a:visited {
+  color: rgb(53, 113, 186);
+}
+
+a:hover,
+a:active {
+  color: rgb(153, 46, 235);
+}
 
 p {
-color: black;
-/* background-color: cornflowerblue; */
-/* text-align: left;
-text-align: center;
-} 
- a{
-   color: blue;
-   text-align: center;
- }
+  color: black;
+  /* background-color: cornflowerblue; */
+  /* text-align: left;
+ 
  .Miscellaneous{
      padding:10px;
      align-items: center ;
      
      
  }
- 
+ p {
  .challenge{
    /* padding:5px; */
-   width: 600px;
-   margin: auto;
-   float : center ;
-   align-items: center;
-   background-color: rgb(141, 174, 236);
-     /* text-shadow: 2px 2px 3px black; */
- } */
-  
- p {
+  width: 600px;
+  margin: auto;
+  float: center;
+  align-items: center;
+  background-color: rgb(141, 174, 236);
+  /* text-shadow: 2px 2px 3px black; */
+}
+p {
   color: black;
   /* background-color: cornflowerblue; */
   /* text-align: left; */
   text-align: center;
-  } 
-   
-   .Miscellaneous{
-       padding:10px;
-       align-items: center ;
+}
 
-   }
-   
-   .challenge{
-     /* padding:5px; */
-     width: 600px;
-     margin: auto;
-     float : center ;
-     align-items: center;
-     background-color: rgb(141, 174, 236);
-       /* text-shadow: 2px 2px 3px black; */
-   }
-   
-   .Categories{
-    width: 600px;
-     margin: auto;
-     float : center ;
-     align-items: center;
-     background-color: rgb(141, 174, 236);
-   }
+.Miscellaneous {
+  padding: 10px;
+  align-items: center;
+}
 
-   .whatarectf{
-    width: 600px;
-     margin: auto;
-     float : center ;
-     align-items: center;
-     background-color: rgb(140, 140, 236);  
-   }
+.challenge {
+  /* padding:5px; */
+  width: 600px;
+  margin: auto;
+  float: center;
+  align-items: center;
+  background-color: rgb(141, 174, 236);
+  /* text-shadow: 2px 2px 3px black; */
+}
 
-   .ctfcategories{
-    width: 600px;
-     margin: auto;
-     float : center ;
-     align-items: center;
-     background-color: rgb(140, 140, 236);
-   }
+.Categories {
+  width: 600px;
+  margin: auto;
+  float: center;
+  align-items: center;
+  background-color: rgb(141, 174, 236);
+}
+
+.whatarectf {
+  width: 600px;
+  margin: auto;
+  float: center;
+  align-items: center;
+  background-color: rgb(140, 140, 236);
+}
+
+.ctfcategories {
+  width: 600px;
+  margin: auto;
+  float: center;
+  align-items: center;
+  background-color: rgb(140, 140, 236);
+}

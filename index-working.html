@@ -10,7 +10,9 @@
     <meta name="author" content="Nikolasfil" />
     <meta name="description"
         content="This is a page dedicated to CTF, guides and challenges created and maintained by nikolasfil" />
-    <title>CTF Page</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
+        <title>CTF Page</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
     <!-- <link rel="icon" href="some image" type="image/x-icon"> -->
 </head>
@@ -19,6 +21,13 @@
 
     <header>
         <h2>CTFpage</h2>
+        <nav>
+            <a href="#ChallengeCategories">
+                <button> Challenges</button></a>
+            <a href="#whatarectf"><button id="navigation"> Explanation </button></a>
+            <a href="#ctfcategories"><button id="navigation">Categories</button></a>
+            <a href="#resourceslinks"><button id="navigation">Resources</button></a>
+        </nav>
     </header>
     <!-- <section id="menubar">
         <a href="#ChallengeCategories">Challenges</a>
@@ -36,15 +45,16 @@
     <a href="https://nikolasfil.github.io/CTFpage/Forensics.html">Forensics</a> -->
 
             <!-- relative reference -->
-            <a href="Miscellaneous.html">Miscellaneous</a>
+            <a href="Miscellaneous.html"><button id="challenges">Miscellaneous</button></a>
             <br /><br />
-            <a href="Forensics.html">Forensics</a>
+            <a href="Forensics.html"><button id="challenges">Forensics</button></a>
             <!-- <a href="https://nikolasfil.github.io/CTFpage/Forensic.html">Miscellaneous</a> -->
 
             <br /><br />
             <!-- </div> -->
         </section>
         <hr>
+
 
         <section id="whatarectf">
             <!-- <div class="whatarectf"> -->
@@ -97,13 +107,29 @@
         <hr>
 
 
-        <section id="resources">
+        <section id="resourceslinks">
             <!-- <div class="resources"> -->
             <h3>Resources</h3>
-            <h4>Practice</h4>
-            <p></p>
-            <a href="https://ctflearn.com/">ctflearn.com</a><br>
-            <a href="https://play.picoctf.org/">picoCTF.org</a>
+            <aside>
+                <details>
+                    <summary>
+                        Resources
+                    </summary>
+                    <p>On their way</p>
+                </details>
+            </aside>
+
+            <!-- <h4>Practice</h4> -->
+            <aside>
+                <details>
+                    <summary>
+                        Practice
+                    </summary>
+                    <p> <a href="https://ctflearn.com/">ctflearn.com</a><br>
+                        <a href="https://play.picoctf.org/">picoCTF.org</a>
+                    </p>
+                </details>
+            </aside>
             <!-- </div> -->
         </section>
 
@@ -113,12 +139,12 @@
             </body>  -->
 
     </main>
-    
+
     <footer>
         <br><br>
         <hr>
         <p>&lt;&lt;&lt; &copy; nikolasfil &gt;&gt;&gt;</p>
-        
+
         <!-- goes to index.html -->
         <p><a href="#">Back to Top</a> <a href="/">Back to home</a></p>
         <br>
