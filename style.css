@@ -175,3 +175,29 @@ details summary > * {
 details summary { 
   cursor: pointer;
 }
+
+
+
+.bg-navbar{
+  padding:5px;
+  width: 270px;
+  height: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(4, 67, 112);
+  /* float: left; */
+  /* margin: 5px; */
+}
+
+
+
+.challenges-navbar{
+  padding:5px;
+  /* width: 270px; */
+  height: 20px;
+  border-width: 2px;
+  /* border-style: solid; */
+  border-color: rgb(4, 67, 112);
+  /* float: left; */
+  /* margin: 5px; */
+}
