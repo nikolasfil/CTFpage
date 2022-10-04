@@ -1,0 +1,96 @@
+/* there is a universal selector * */
+
+/* relative  */
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+.outer{
+    width: 500px;
+    height: 500px;
+    background: blue;
+}
+
+.inner{
+    width:100%;
+    /* the percentage is the one of the parent */
+    /* vh percent od the screen */
+    /* vw is the percentage of the screen */
+    text-align: ;
+    text-indent: ;
+    font-family: ;
+    line-height: ;
+    letter-spacing: ;
+    word-spacing: ;
+    text-transform: ;
+    text-decoration: ;
+
+
+}
+
+
+/* second one 
+ */
+
+
+ /* CSS  BOX MODEL */
+
+ just{
+    margin: ;
+    border: ;
+    padding ;
+    content:  ;
+    border-style: ;
+    border-width: ;
+    border-color: ;
+    border: width style color ;
+
+
+ }
+
+ a{
+    cursor: pointer;
+    outline: ;
+    outline-offset: ;
+ }
+
+body{
+
+}
+
+ .block{
+/* block always starts a new line and takes full width  */
+    display: block;
+    width; 
+    margin: 0 auto;
+    opacity: ;
+
+
+}
+
+ .inline{
+    display: inline;
+    /* does not start and only takes up as much as contnent space */
+ }
+
+
+img{
+    float: ;
+
+}
+p{clear: right ;
+
+}
+
+one{
+    float:left;
+    width: 33.33%;
+}
+
+
+.absolute{ 
+    position: absolute;
+}
+
+
