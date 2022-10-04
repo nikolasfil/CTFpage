@@ -1,4 +1,5 @@
-
+// [Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes($Text))
+// doesn't work right
 
 function getting() {
     var x = document.getElementById('blindflag').value
@@ -7,8 +8,8 @@ function getting() {
     // alert(x)
 
     el = document.getElementById('blindflagcheck')
-    if (x == 'flag{example}') {
-        el.innerHTML = '<h2>complete</h2>'
+    if (x == b64_to_utf8('ZmxhZ3tleGFtcGxlfQ==')) {
+        el.innerHTML = '<h2 class="submitted">complete</h2>'
     }
     else {
         alert('Nope, Try again')
@@ -17,9 +18,8 @@ function getting() {
 
 
 
-
 function b64_to_utf8(str) {
-    return decodeURIComponent(escape(window.atob(str)));
+    return decodeURIComponent(window.atob(str));
 }
 
 
