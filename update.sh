@@ -14,7 +14,7 @@ git add  . ; git commit -m $update; git push
 
 echo -e '\n\n root \n\n'
 
-cd /d/nick/Programms/Github_Projects/NikolasProjects/nikolasfil.github.io
+cd /d/nick/Programms/Github_Projects/NikolasProjects/nikolasfil.github.com
 
 git add  . ; git commit -m $update; git push 
 
