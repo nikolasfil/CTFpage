@@ -12,7 +12,17 @@
     content="This is a page dedicated to Miscellaneous challenges created and maintained by nikolasfil" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Miscellaneous</title>
-  <link rel="shortcut icon" type="image/ico" href="/images/icon_flag2.ico"/>
+  <script type="text/javascript" src="function.js"></script>
+  <link rel="shortcut icon" type="image/ico" href="images/icon_flag2.ico" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#dialog" ).dialog();
+  } );
+  </script>
 </head>
 
 <body>
@@ -33,7 +43,7 @@
       <nav class="challenges-navbar">
         <a href="index.html"><button id="buttonHome">Home</button></a>
         <a href="Forensics.html"><button id="challenges">Forensics</button></a>
-    </nav>
+      </nav>
 
       <br /><br />
 
@@ -71,6 +81,11 @@
           Command : <br>
           ncat ip_address 600 <br>
         </p>
+        <section class="sectcheck" id="blindcheck">
+          <input type="text" value="" id="blindflag">
+          <input type="button" onclick="getting('blind')" value="submit">
+          
+        </section>
         <hr>
 
       </section>
@@ -90,6 +105,11 @@
           Command : <br>
           ncat ip_address 601<br>
         </p>
+        <section class="sectcheck" id="idlecheck">
+          <input type="text" value="" id="idleflag">
+          <input type="button" onclick="getting('idle')" value="submit">
+
+        </section>
         <hr>
 
       </section>
@@ -106,6 +126,11 @@
           <br>Command : <br>
           ncat ip_address 605 <br>
         </p>
+        <section class="sectcheck" id="breakoutcheck">
+          <input type="text" value="" id="breakoutflag">
+          <input type="button" onclick="getting('breakout')" value="submit">
+
+        </section>
         <hr>
       </section>
 
@@ -116,7 +141,7 @@
           <a href="https://github.com/nikolasfil/CTF/tree/main/Miscellaneous">Here</a> is the source code , and the
           opportunity to
           run
-          the challenges on your machine 
+          the challenges on your machine
         </p>
       </section>
 
@@ -127,8 +152,8 @@
     <br>
     <hr>
     <p class="footer"><a href="#" style="font-size: 13px;">Back to Top</a>&nbsp;&nbsp; &lt;&lt;&lt; &copy;
-        nikolasfil &gt;&gt;&gt; &nbsp;&nbsp;<a href="/index.html" style="font-size: 13px;">Back to home</a></p>
-</footer>
+      nikolasfil &gt;&gt;&gt; &nbsp;&nbsp;<a href="/index.html" style="font-size: 13px;">Back to home</a></p>
+  </footer>
 
 
 </body>
