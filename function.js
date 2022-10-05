@@ -20,6 +20,7 @@ function getting(srcs) {
         var chall='huffpuffflag';
         var flag = 'ZmxhZ3t2M3J5UDFja3lIdWZmM3J9';        
     }
+    
     var x = document.getElementById(chall).value;
     el = document.getElementById(sect);
     // alert(b64_to_utf8(flag))
