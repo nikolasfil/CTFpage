@@ -34,6 +34,10 @@ function getting(srcs) {
         var flag = 'ZmxhZzV7SUVFRV9jMG1wM3QxdDF2M30=';
     }   
 
+    else if(srcs =='paintpeel'){
+        var flag ='ZmxhZ3tJMzMzX1NwYXJrbDFuZ18xbm4wdmF0MTBufQ==';
+    }
+
     // miscellaneous
 
     else if (srcs == 'blind') {
@@ -46,13 +50,23 @@ function getting(srcs) {
         var flag = 'ZmxhZ3tUaDFzXzNzY2FsM3RlZF9xdTFjbHl9';
     }
 
+    // Cryptography
+
+    else if (srcs=='spinning'){
+        var flag ='ZmxhZ3tZb3Vfc3Bpbl9teV9oZWFkX3JvdW5kX3JvdW5kfQ==';
+    }
+    else if (srcs=='base'){
+        var flag = 'ZmxhZ3tCYXMzZF8wbl9DdXJyM250XzN2MWQzbmMzXzFtX0F3czBtM30=';
+    }
+    
+
     var sect = srcs + 'check';
     var chall = srcs + 'flag';
     var x = document.getElementById(chall).value;
     el = document.getElementById(sect);
     // alert(b64_to_utf8(flag))
     if (x == b64_to_utf8(flag)) {
-        el.innerHTML = '<h3 class="submitted">complete</h3>';
+        el.innerHTML = '<h3 class="submitted">Completed</h3>';
     }
     else {
         // alert('Nope, Try again');
@@ -69,5 +83,32 @@ function b64_to_utf8(str) {
     return decodeURIComponent(window.atob(str));
 }
 
+
+function show(tag){
+    if (tag=='ALL'){
+        document.getElementById('IEEEDAY').style.display='block';
+        document.getElementById('mediumTuesday').style.display='block';
+        document.getElementById('IEEEChallenge').style.display='block';
+    }
+    
+    else if (tag=='IEEEDAY'){
+        document.getElementById('IEEEDAY').style.display='block';
+        document.getElementById('mediumTuesday').style.display='none';
+        document.getElementById('IEEEChallenge').style.display='none';
+    }
+
+    else if (tag=='mediumTuesday'){
+        document.getElementById('IEEEDAY').style.display='none';
+        document.getElementById('mediumTuesday').style.display='block';
+        document.getElementById('IEEEChallenge').style.display='none';
+    }
+
+    else if (tag=='IEEEChallenge'){
+        document.getElementById('IEEEDAY').style.display='none';
+        document.getElementById('mediumTuesday').style.display='none';
+        document.getElementById('IEEEChallenge').style.display='block';
+    }
+
+}
 
 

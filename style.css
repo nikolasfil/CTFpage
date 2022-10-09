@@ -153,6 +153,7 @@ section{
   border-color: rgb(140, 140, 250);
   float: center;
   margin: auto;
+  word-wrap: break-word;
 }
 
 .sectcheck{
