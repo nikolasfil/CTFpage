@@ -1,5 +1,7 @@
 // [Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes($Text))
 // doesn't work right
+var change;
+change = true;
 
 function getting(srcs) {
 
@@ -40,6 +42,9 @@ function getting(srcs) {
 
     // miscellaneous
 
+    else if (srcs == 'beginnerflag'){
+        var flag = 'ZmxhZ3tIb29yYXlfRmlyc3RfRmxhZ30=';
+    }
     else if (srcs == 'blind') {
         var flag = 'ZmxhZ3tOMHdfWTB1X1MzM19NM30=';
     }
@@ -64,20 +69,35 @@ function getting(srcs) {
     var chall = srcs + 'flag';
     var x = document.getElementById(chall).value;
     el = document.getElementById(sect);
+    
+    // original = document.getElementById(sect);
+    
     // alert(b64_to_utf8(flag))
     if (x == b64_to_utf8(flag)) {
-        el.innerHTML = '<h3 class="submitted">Completed</h3>';
+        el.innerHTML = '<h3 class="submitted" style="color: rgb(255, 0, 212);">Completed!!</h3>';
     }
     else {
         // alert('Nope, Try again');
-        window.confirm('Nope, Try again')
-        // el.innerHTML+='<div id="dialog" title="Basic dialog">;<p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the x icon.</p></div>'
+        // window.confirm('Nope, Try again');
+        if (window.change){
+            el.innerHTML+='<p class="wronganswer" style="color: red;">Nope, Try Again</p>';
+            window.change = false;
+        }
+        setTimeout(function(){const docs =document.querySelectorAll(".wronganswer");docs.forEach(box=>{box.remove()});window.change=true;},1500);
+        
+        // clearing();
+        // setTimeout(clearing,5000);
+        // window.change = true;
+        // el.innerHTML-='<h4 style="color: red;">Nope, Try Again</h4>';
+        // document.getElementById("wronganswer").innerHTML='ss';
+        // // el.innerHTML+='<div id="dialog" title="Basic dialog">;<p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the x icon.</p></div>'
         // el.innerHTML+='<div class="alert"><span class="closebtn" onclick="this.parentElement.style.display="none";">&times;</span>This is an alert box.</div>'
         
     }
 }
 
-
+function clearing(){
+    document.getElementById("wronganswer").innerHTML='';}
 
 function b64_to_utf8(str) {
     return decodeURIComponent(window.atob(str));
